@@ -1,3 +1,4 @@
+import { BsBag } from "react-icons/bs";
 import Link from "next/link";
 import Button from "./Button";
 
@@ -37,7 +38,13 @@ const Navbar = () => {
           </ul>
         </nav>
         {/* NAV RIGHT */}
-        <nav>
+        <nav className="flex items-center gap-5">
+          <Link href="/cart" className="relative text-lg">
+            <BsBag />
+            <span className="absolute text-xs h-4 w-4 text-light flex justify-center items-center -right-2 -bottom-2 rounded-full bg-dark">
+              10
+            </span>
+          </Link>
           <Button href="/login" placeholder="Login" color="green" />
         </nav>
       </div>
