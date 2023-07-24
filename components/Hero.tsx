@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="wrapper section-padding h-[calc(100vh-5rem)] grid grid-cols-5">
+    <section className="wrapper section-padding h-[calc(100vh-5rem)] grid grid-cols-5 relative">
       {/* FIRST COL */}
       <div className="w-full h-full ">
         <div className="w-full h-4/6 overflow-hidden">
@@ -69,6 +69,17 @@ const Hero = () => {
             />
           </motion.div>
         </div>
+      </div>
+      {/*LEFT TEXT CONTENTS */}
+      <div className="absolute left-0 bottom-10  w-2/5">
+        <h2 className="text-4xl font-medium">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </h2>
+      </div>
+      <div className="absolute right-0 top-10  w-2/5">
+        <h2 className="text-4xl font-medium">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </h2>
       </div>
     </section>
   );
